@@ -79,10 +79,10 @@ public class BaseUtil {
 							+File.separator+ "chromedriver.exe");							
 			driver = new ChromeDriver();
 			
-//			DesiredCapabilities cap=DesiredCapabilities.chrome();
-//			cap.setCapability("version", "");
-//			cap.setCapability("platform", "LINUX");
-//			driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
+			DesiredCapabilities cap=DesiredCapabilities.chrome();
+			cap.setCapability("version", "");
+			cap.setCapability("platform", "LINUX");
+			driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 		} else if (browser.equalsIgnoreCase("ie")) {
 //			System.setProperty("webdriver.ie.driver",
 //					GetPath.getBasePath() + File.separator
